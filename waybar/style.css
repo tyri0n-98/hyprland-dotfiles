@@ -1,0 +1,162 @@
+* {
+    border: none;
+    border-radius: 0;
+    /* font-family: "Ubuntu Nerd Font"; */
+    font-family: "Fira Sans Semibold";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: white;
+}
+
+#window {
+    font-weight: bold;
+    font-family: "Ubuntu";
+}
+/*
+#workspaces {
+    padding: 0 5px;
+}
+*/
+
+#workspaces {
+  background: transparent;
+  margin: 0px -5px 0px 5px;
+  padding: 0px 5px 0px 5px;
+  color: white;
+}
+
+#workspaces button {
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+#workspaces button.active:hover {
+    color: black;
+    background: white;
+    border-radius: 16px;
+    font-weight: bold;
+}
+
+#workspaces button.active {
+    color: black;
+    background: white;
+    border-radius: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+}
+
+#mode {
+    background: #64727D;
+    border-bottom: 3px solid white;
+}
+
+#clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-spotify, #tray, #mode {
+    padding: 0 5px;
+    margin: 0 3px;
+}
+
+#clock {
+    font-weight: bold;
+}
+
+#battery {
+}
+
+#battery icon {
+    color: red;
+}
+
+#battery.charging {
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cpu {
+}
+
+#memory {
+}
+
+#network {
+}
+
+#network.disconnected {
+    background: #f53c3c;
+}
+
+#pulseaudio {
+}
+
+#pulseaudio.muted {
+}
+
+#custom-player.custom-spotify {
+    color: rgb(102, 220, 105);
+}
+#custom-player.custom-firefox {
+    color: rgb(255, 0, 0);
+}
+
+#custom-chat {
+    font-size: 16px;
+    color: #F5455C;
+    margin-left: 3px;
+    border-radius: 4px;
+    padding-right: 3px;
+}
+
+#custom-syspower {
+  font-size: 22px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#custom-chat:hover {
+    padding-right: 3px;
+    font-size: 16px;
+    border-radius: 16px;
+    transition: background-color 300ms linear;
+    transition: border-radius 300ms linear;
+    background-color: rgba(255, 255, 255, 0.30);
+}
+
+#custom-mail {
+    font-size: 16px;
+    color: #1074D7;
+    border-radius: 4px;
+  padding-right: 4px;
+}
+
+#custom-mail:hover {
+  padding-right: 4px;
+    border-radius: 16px;
+    transition: background-color 300ms linear;
+    transition: border-radius 300ms linear;
+    background-color: rgba(255, 255, 255, 0.30);
+}
+
+#tray {
+}
