@@ -12,7 +12,7 @@
         "rewrite": {
           "kitty:(.*)": "  $1",
           "jetbrains-idea:(.*)": "$1",
-          ".*:(.*) — Mozilla Firefox": "󰈹  $1",
+          ".*:(.*) — Mozilla Firefox": "󰈹  $1"
         },
         "max-length": 100,
         "seperate-outputs": true
@@ -95,7 +95,7 @@
 		"signal": 8,
 		"restart-interval": 0,
 		"exec": "$HOME/.config/waybar/scripts/pipewire.sh",
-		"on-click": "pwvucontrol",
+		"on-click": "pavucontrol",
 		"on-scroll-up": "wpctl set-volume @DEFAULT_SINK@ 0.05+ --limit 1",
 		"on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 0.05-"
 	},

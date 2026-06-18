@@ -129,8 +129,9 @@ window#waybar {
 }
 
 #custom-syspower {
-  font-size: 22px;
+  font-size: 14px;
   margin-right: 5px;
+  margin-top: 3px;
   margin-left: 5px;
 }
 
